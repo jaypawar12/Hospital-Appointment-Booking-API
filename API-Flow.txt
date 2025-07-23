@@ -1,0 +1,72 @@
+1. Admin Module
+
+| Index | API                    | Method   | Route                       | Auth  | Done |
+| ----- | ---------------------- | -------- | --------------------------- | ----  | -    |
+| I     | Add Admin              | `POST`   | `/api/admin/add`            | ❌    | ✔  |
+| II    | Get All Admins         | `GET`    | `/api/admin/fetchAll`       | ✅    | ✔  |
+| III   | Get Admin by ID        | `GET`    | `/api/admin/:id`            | ✅    | ✔  |
+| IV    | Update Admin           | `PUT`    | `/api/admin/:id`            | ✅    | ✔  |
+| V     | Delete Admin           | `DELETE` | `/api/admin/:id`            | ✅    | ✔  |
+| VI    | Admin Login            | `POST`   | `/api/admin/login`          | ❌    | ✔  |
+| VII   | Change Admin Password  | `PUT`    | `/api/admin/changePassword` | ✅    | ✔  |
+| VIII  | Admin Profile          | `GET`    | `/api/admin/profile/:id`    | ✅    | ✔  |
+| IX    | Dashboard Stats        | `GET`    | `/api/admin/dashboardStats` | ✅    | -  |
+| X     | Add Patient (by Admin) | `POST`   | `/api/admin/addPatient`     | ✅    | -  |
+| XI    | Add Doctor (by Admin)  | `POST`   | `/api/admin/addDoctor`      | ✅    | -  |
+
+
+
+2. Doctor Module
+
+| Index | API                     | Method   | Route                         | Auth | Done |
+| ----- | ----------------------- | -------- | ----------------------------- | ---- | -    |
+| I     | Register Doctor         | `POST`   | `/api/doctor/register`        | ❌    | - |
+| II    | Get All Doctors         | `GET`    | `/api/doctor/fetchAll`        | ✅    | - |
+| III   | Get Doctor by ID        | `GET`    | `/api/doctor/:id`             | ✅    | - |
+| IV    | Update Doctor           | `PUT`    | `/api/doctor/:id`             | ✅    | - |
+| V     | Delete Doctor           | `DELETE` | `/api/doctor/:id`             | ✅    | - |
+| VI    | Login Doctor            | `POST`   | `/api/doctor/login`           | ❌    | - |
+| VII   | Change Doctor Password  | `PUT`    | `/api/doctor/changePassword`  | ✅    | - |
+| VIII  | Doctor Profile          | `GET`    | `/api/doctor/profile/:id`     | ✅    | - |
+| IX    | Manage Schedule         | `POST`   | `/api/doctor/schedule`        | ✅    | - |
+| X     | Get Doctor Appointments | `GET`    | `/api/appointment/doctor/:id` | ✅    | - |
+
+
+
+
+3. Patient Module
+
+| Index | API                        | Method   | Route                         | Auth | Done |
+| ----- | -------------------------- | -------- | ----------------------------- | ---- | -    |
+| I     | Register Patient           | `POST`   | `/api/patient/register`       | ❌    | - |
+| II    | Get All Patients           | `GET`    | `/api/patient/fetchAll`       | ✅    | - |
+| III   | Get Patient by ID          | `GET`    | `/api/patient/:id`            | ✅    | - |
+| IV    | Update Patient             | `PUT`    | `/api/patient/:id`            | ✅    | - |
+| V     | Delete Patient             | `DELETE` | `/api/patient/:id`            | ✅    | - |
+| VI    | Login Patient              | `POST`   | `/api/patient/login`          | ❌    | - |
+| VII   | Change Patient Password    | `PUT`    | `/api/patient/changePassword` | ✅    | - |
+| VIII  | Patient Profile            | `GET`    | `/api/patient/profile/:id`    | ✅    | - |
+| X     | Forgot Password (Send OTP) | `POST`   | `/api/patient/forgotPassword` | ❌    | - |
+| XI    | Verify OTP                 | `POST`   | `/api/patient/verifyOtp`      | ❌    | - |
+| XII   | Reset Password             | `POST`   | `/api/patient/resetPassword`  | ❌    | - |
+
+
+
+4. Appointment Module
+
+| Index | API                            | Method   | Route                               | Auth | Done |
+| ----- | ------------------------------ | -------- | ----------------------------------- | ---- | - |
+| I     | Book Appointment               | `POST`   | `/api/appointment/book`             | ✅    | - |
+| II    | Get All Appointments           | `GET`    | `/api/appointment/fetchAll`         | ✅    | - |
+| III   | Get Appointments by Patient ID | `GET`    | `/api/appointment/patient/:id`      | ✅    | - |
+| IV    | Cancel Appointment             | `DELETE` | `/api/appointment/:id`              | ✅    | - |
+| V     | Get Doctor Slots               | `GET`    | `/api/appointment/slots/:doctorId`  | ✅    | - |
+| VI    | Reschedule Appointment         | `PUT`    | `/api/appointment/reschedule/:id`   | ✅    | - |
+| VII   | Appointment Status Update      | `PUT`    | `/api/appointment/status/:id`       | ✅    | - |
+| VIII  | Filter by Date                 | `GET`    | `/api/appointment/date/:yyyy-mm-dd` | ✅    | - |
+
+
+
+
+
+
